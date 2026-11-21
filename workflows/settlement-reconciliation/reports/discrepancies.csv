@@ -1,0 +1,5 @@
+type,order_id,detail,expected,actual
+DUPLICATE_SETTLEMENT,SO1006,"同一订单有 2 条结算记录（ST06, ST06）",,
+UNKNOWN_ORDER,SO9999,结算单中的订单不在订单表中,,
+AMOUNT_MISMATCH,SO1002,差额 +18.00 USD（容差 0.01）,-18.00,0.00
+MISSING_SETTLEMENT,SO1007,订单未出现在结算单中,16.99,
