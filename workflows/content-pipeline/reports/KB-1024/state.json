@@ -1,0 +1,22 @@
+{
+  "sku": "KB-1024",
+  "stages": {
+    "topic": {
+      "from_cache": false,
+      "status": "done"
+    },
+    "script": {
+      "from_cache": false,
+      "status": "done"
+    },
+    "image_prompt": {
+      "from_cache": false,
+      "status": "done"
+    },
+    "caption": {
+      "from_cache": false,
+      "status": "awaiting_review"
+    }
+  },
+  "status": "waiting_for_review:caption"
+}
