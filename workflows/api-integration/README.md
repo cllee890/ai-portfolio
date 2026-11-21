@@ -38,3 +38,38 @@ def sync_orders(since: str):
     abnormal = [o for o in rows if o["status"] in ("refund", "chargeback")]
     return rows, abnormal
 ```
+
+## 运行说明
+**环境要求**：Python 3.9+，依赖 `requests`（`pip install requests`）。
+
+**环境变量**（不要写入代码或仓库）：
+```bash
+export SHOP_API_BASE="https://api.example-shop.com/v1"   # 店铺 API 根地址
+export SHOP_API_TOKEN="你的访问令牌"
+```
+
+**运行方式**：示例代码中的 `sync_orders(since)` 只负责拉取与筛选，不包含写入表格和推送通知，需在调用处自行接入。
+```python
+from sync import sync_orders   # 将上方示例保存为 sync.py
+rows, abnormal = sync_orders("2026-11-20T00:00:00+08:00")
+print(len(rows), [o["order_id"] for o in abnormal])
+```
+
+## 示例输入输出
+**输入**：`sync_orders("2026-11-20T00:00:00+08:00")`，接口分两页返回（每页 2 条）：
+
+| 页 | 返回 `items` | `next_cursor` |
+|---|---|---|
+| 第 1 页 | A1001（paid）、A1002（refund） | `"2"` |
+| 第 2 页 | A1003（shipped）、A1004（chargeback） | `null` |
+
+**输出**（已用本地 mock 接口验证）：
+```text
+total: 4
+abnormal: ['A1002', 'A1004']
+```
+
+**异常输入**：若 `SHOP_API_TOKEN` 无效，接口返回 401，`get()` 不会重试而是直接抛出：
+```text
+HTTPError 401 Client Error: Unauthorized for url: .../orders?...
+```
