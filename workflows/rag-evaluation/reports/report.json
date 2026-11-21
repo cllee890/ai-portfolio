@@ -1,0 +1,452 @@
+{
+  "config": {
+    "docs": "data/docs",
+    "testset": "data/testset.jsonl",
+    "top_k": 4,
+    "threshold": 0.15,
+    "retriever": "lexical-tfidf-bigram"
+  },
+  "metrics": {
+    "total": 20,
+    "answerable": 16,
+    "should_transfer": 4,
+    "hit_rate": 1.0,
+    "hit_at_1": 0.9375,
+    "mrr": 0.9688,
+    "keyword_recall": 0.9375,
+    "transfer_accuracy": 0.9,
+    "false_transfer_rate": 0.0,
+    "missed_transfer_rate": 0.5
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "签收后多久可以申请退款？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md",
+        "exchange-policy.md",
+        "refund-policy.md",
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.4112,
+        0.197,
+        0.1832,
+        0.1334
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q02",
+      "question": "退款到账要多久？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md",
+        "refund-policy.md",
+        "refund-policy.md",
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.2953,
+        0.2727,
+        0.1431,
+        0.129
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q03",
+      "question": "定制商品可以无理由退款吗？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md",
+        "refund-policy.md",
+        "exchange-policy.md",
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.544,
+        0.1337,
+        0.0874,
+        0.0702
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q04",
+      "question": "退款审核需要几天？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md",
+        "refund-policy.md",
+        "refund-policy.md",
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.4052,
+        0.1874,
+        0.0982,
+        0.0887
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q05",
+      "question": "国内订单多久能送到？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "invoice.md",
+        "shipping.md",
+        "invoice.md",
+        "shipping.md"
+      ],
+      "top_scores": [
+        0.2231,
+        0.0872,
+        0.0769,
+        0.0699
+      ],
+      "hit": true,
+      "hit_at_1": false,
+      "rr": 0.5,
+      "keyword_recall": 0.0
+    },
+    {
+      "id": "q06",
+      "question": "订单满多少元免运费？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "shipping.md",
+        "exchange-policy.md",
+        "invoice.md",
+        "shipping.md"
+      ],
+      "top_scores": [
+        0.4496,
+        0.2013,
+        0.0633,
+        0.0576
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q07",
+      "question": "怎么查看物流信息？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "shipping.md",
+        "shipping.md"
+      ],
+      "top_scores": [
+        0.5114,
+        0.1892
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q08",
+      "question": "海外仓订单要交关税吗？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "shipping.md",
+        "shipping.md",
+        "invoice.md",
+        "shipping.md"
+      ],
+      "top_scores": [
+        0.4404,
+        0.1283,
+        0.0566,
+        0.0515
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q09",
+      "question": "电池坏了保修多久？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "warranty.md",
+        "warranty.md",
+        "warranty.md",
+        "warranty.md"
+      ],
+      "top_scores": [
+        0.4043,
+        0.2957,
+        0.2598,
+        0.1349
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q10",
+      "question": "产品保修期是多长？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "warranty.md",
+        "warranty.md",
+        "warranty.md",
+        "warranty.md"
+      ],
+      "top_scores": [
+        0.3165,
+        0.2104,
+        0.1009,
+        0.096
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q11",
+      "question": "摔坏了还能保修吗？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "warranty.md",
+        "warranty.md",
+        "warranty.md",
+        "warranty.md"
+      ],
+      "top_scores": [
+        0.4827,
+        0.4245,
+        0.2315,
+        0.2202
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q12",
+      "question": "怎么申请保修？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "warranty.md",
+        "warranty.md",
+        "warranty.md",
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.3625,
+        0.3187,
+        0.2858,
+        0.1989
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q13",
+      "question": "电子发票多久发到邮箱？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "invoice.md",
+        "invoice.md",
+        "invoice.md",
+        "invoice.md"
+      ],
+      "top_scores": [
+        0.5635,
+        0.2475,
+        0.2134,
+        0.1423
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q14",
+      "question": "发票抬头可以改吗？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "invoice.md",
+        "invoice.md",
+        "invoice.md",
+        "invoice.md"
+      ],
+      "top_scores": [
+        0.422,
+        0.2358,
+        0.1764,
+        0.1572
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q15",
+      "question": "收到商品后几天内能换货？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "exchange-policy.md",
+        "exchange-policy.md",
+        "exchange-policy.md",
+        "exchange-policy.md"
+      ],
+      "top_scores": [
+        0.3293,
+        0.2933,
+        0.2184,
+        0.1433
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q16",
+      "question": "尺码不合适可以换吗？",
+      "should_transfer": false,
+      "transferred": false,
+      "top_sources": [
+        "exchange-policy.md"
+      ],
+      "top_scores": [
+        0.2866
+      ],
+      "hit": true,
+      "hit_at_1": true,
+      "rr": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q17",
+      "question": "今天北京的天气怎么样？",
+      "should_transfer": true,
+      "transferred": true,
+      "top_sources": [],
+      "top_scores": [],
+      "hit": null,
+      "hit_at_1": null,
+      "rr": null,
+      "keyword_recall": null
+    },
+    {
+      "id": "q18",
+      "question": "你们公司的老板叫什么名字？",
+      "should_transfer": true,
+      "transferred": true,
+      "top_sources": [],
+      "top_scores": [],
+      "hit": null,
+      "hit_at_1": null,
+      "rr": null,
+      "keyword_recall": null
+    },
+    {
+      "id": "q19",
+      "question": "能帮我写一首关于春天的诗吗？",
+      "should_transfer": true,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.1667
+      ],
+      "hit": null,
+      "hit_at_1": null,
+      "rr": null,
+      "keyword_recall": null
+    },
+    {
+      "id": "q20",
+      "question": "你们会在火星上开设仓库吗？",
+      "should_transfer": true,
+      "transferred": false,
+      "top_sources": [
+        "refund-policy.md"
+      ],
+      "top_scores": [
+        0.185
+      ],
+      "hit": null,
+      "hit_at_1": null,
+      "rr": null,
+      "keyword_recall": null
+    }
+  ],
+  "comparison": null,
+  "sweep": [
+    {
+      "threshold": 0.1,
+      "transfer_accuracy": 0.9,
+      "false_transfer_rate": 0.0,
+      "missed_transfer_rate": 0.5,
+      "hit_rate": 1.0
+    },
+    {
+      "threshold": 0.15,
+      "transfer_accuracy": 0.9,
+      "false_transfer_rate": 0.0,
+      "missed_transfer_rate": 0.5,
+      "hit_rate": 1.0
+    },
+    {
+      "threshold": 0.2,
+      "transfer_accuracy": 1.0,
+      "false_transfer_rate": 0.0,
+      "missed_transfer_rate": 0.0,
+      "hit_rate": 1.0
+    },
+    {
+      "threshold": 0.25,
+      "transfer_accuracy": 0.95,
+      "false_transfer_rate": 0.0625,
+      "missed_transfer_rate": 0.0,
+      "hit_rate": 1.0
+    }
+  ]
+}
