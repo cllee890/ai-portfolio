@@ -83,3 +83,9 @@ for q in ["我想申请退款", "今天天气怎么样"]:
 我想申请退款 -> 根据退款政策，签收后7天内可申请退款，退款将原路返回。[来源:refund-policy.md]
 今天天气怎么样 -> TRANSFER_TO_HUMAN
 ```
+
+**运行测试**（不调用 OpenAI，全部依赖 mock）：
+```bash
+pip install openai numpy
+python -m unittest test_knowledge_base -v   # 或 pytest test_knowledge_base.py
+```
