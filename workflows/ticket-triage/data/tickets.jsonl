@@ -1,0 +1,8 @@
+{"id": "T001", "channel": "email", "subject": "包裹一直没到", "body": "我的订单 SO1003 下单两周了，物流还是不动，手机 13800138000 可以联系我。"}
+{"id": "T002", "channel": "web_form", "subject": "发票抬头能改吗", "body": "电子发票开错了抬头，想改成公司名称，邮箱 buyer@example.com"}
+{"id": "T003", "channel": "email", "subject": "收到的商品是坏的", "body": "充电宝一插上就冒烟，太危险了，我要投诉并且申请全额退款，订单 SO1002。"}
+{"id": "T004", "channel": "chat", "subject": "想问一下尺码", "body": "这款卫衣 L 码适合 175cm 的人穿吗？"}
+{"id": "T005", "channel": "email", "subject": "退款什么时候到账", "body": "我 11 月 5 日申请的退款，订单 SO1001，现在还没收到钱。"}
+{"id": "T006", "channel": "marketplace", "subject": "与描述不符", "body": "颜色和图片完全不一样，要求退货退款，否则我就拒付。"}
+{"id": "T007", "channel": "chat", "subject": "合作咨询", "body": "我们是一家 KOL 经纪公司，想谈一下产品推广的合作，请联系 agency@example.org"}
+{"id": "T008", "channel": "email", "subject": "想换一个颜色", "body": "订单 SO1004 能换成黑色吗？收到后 3 天，还没拆封。"}
