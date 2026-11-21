@@ -4,3 +4,4 @@
 - [image-pipeline](image-pipeline/README.md)：图像流开发
 - [api-integration](api-integration/README.md)：API 对接
 - [plugin-development](plugin-development/README.md)：插件开发
+- [rag-evaluation](rag-evaluation/README.md)：RAG 离线评测（检索指标、转人工策略、阈值扫描）
