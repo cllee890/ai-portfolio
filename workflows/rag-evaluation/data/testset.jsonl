@@ -1,0 +1,20 @@
+{"id": "q01", "question": "签收后多久可以申请退款？", "relevant_sources": ["refund-policy.md"], "keywords": ["7 天", "签收"], "should_transfer": false}
+{"id": "q02", "question": "退款到账要多久？", "relevant_sources": ["refund-policy.md"], "keywords": ["原路返回", "工作日"], "should_transfer": false}
+{"id": "q03", "question": "定制商品可以无理由退款吗？", "relevant_sources": ["refund-policy.md"], "keywords": ["定制", "不支持"], "should_transfer": false}
+{"id": "q04", "question": "退款审核需要几天？", "relevant_sources": ["refund-policy.md"], "keywords": ["审核", "1-3 个工作日"], "should_transfer": false}
+{"id": "q05", "question": "国内订单多久能送到？", "relevant_sources": ["shipping.md"], "keywords": ["国内仓", "3-7 个工作日"], "should_transfer": false}
+{"id": "q06", "question": "订单满多少元免运费？", "relevant_sources": ["shipping.md"], "keywords": ["99 元", "免运费"], "should_transfer": false}
+{"id": "q07", "question": "怎么查看物流信息？", "relevant_sources": ["shipping.md"], "keywords": ["查看物流", "2 小时"], "should_transfer": false}
+{"id": "q08", "question": "海外仓订单要交关税吗？", "relevant_sources": ["shipping.md"], "keywords": ["关税", "买家承担"], "should_transfer": false}
+{"id": "q09", "question": "电池坏了保修多久？", "relevant_sources": ["warranty.md"], "keywords": ["电池", "6 个月"], "should_transfer": false}
+{"id": "q10", "question": "产品保修期是多长？", "relevant_sources": ["warranty.md"], "keywords": ["12 个月", "签收"], "should_transfer": false}
+{"id": "q11", "question": "摔坏了还能保修吗？", "relevant_sources": ["warranty.md"], "keywords": ["人为", "不在保修范围"], "should_transfer": false}
+{"id": "q12", "question": "怎么申请保修？", "relevant_sources": ["warranty.md"], "keywords": ["保修申请", "故障照片"], "should_transfer": false}
+{"id": "q13", "question": "电子发票多久发到邮箱？", "relevant_sources": ["invoice.md"], "keywords": ["24 小时", "邮箱"], "should_transfer": false}
+{"id": "q14", "question": "发票抬头可以改吗？", "relevant_sources": ["invoice.md"], "keywords": ["不支持修改", "作废"], "should_transfer": false}
+{"id": "q15", "question": "收到商品后几天内能换货？", "relevant_sources": ["exchange-policy.md"], "keywords": ["15 天", "换货"], "should_transfer": false}
+{"id": "q16", "question": "尺码不合适可以换吗？", "relevant_sources": ["exchange-policy.md"], "keywords": ["尺码", "换货"], "should_transfer": false}
+{"id": "q17", "question": "今天北京的天气怎么样？", "relevant_sources": [], "keywords": [], "should_transfer": true}
+{"id": "q18", "question": "你们公司的老板叫什么名字？", "relevant_sources": [], "keywords": [], "should_transfer": true}
+{"id": "q19", "question": "能帮我写一首关于春天的诗吗？", "relevant_sources": [], "keywords": [], "should_transfer": true}
+{"id": "q20", "question": "你们会在火星上开设仓库吗？", "relevant_sources": [], "keywords": [], "should_transfer": true}
