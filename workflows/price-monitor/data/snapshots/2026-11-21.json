@@ -1,0 +1,3 @@
+{"CMP-001": {"price": "34.90", "currency": "USD", "available": true},
+ "CMP-002": {"price": "18.50", "currency": "USD", "available": false},
+ "CMP-003": {"price": "25.99", "currency": "USD", "available": true}}
