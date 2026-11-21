@@ -89,3 +89,9 @@ for q in ["我想申请退款", "今天天气怎么样"]:
 pip install openai numpy
 python -m unittest test_knowledge_base -v   # 或 pytest test_knowledge_base.py
 ```
+
+**订单查询工具实现**：`order_tools.py` 提供 `query_order` 的具体实现与工具调用分发函数 `dispatch_tool_call`，配置通过环境变量 `SHOP_API_BASE`、`SHOP_API_TOKEN` 读取。接口路径 `GET /orders/{order_id}` 与返回字段为示意约定，接入真实店铺接口时需按文档调整。
+
+```bash
+python -m unittest test_order_tools test_knowledge_base -v
+```
