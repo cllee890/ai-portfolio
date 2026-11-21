@@ -28,7 +28,8 @@
 | 复杂工作流 | 多节点串联、图像流处理、插件开发、API 对接 | [`workflows/`](workflows/README.md) |
 | Prompt 工程 | 行业定制提示词、输出格式规范优化 | [`prompts/`](prompts/) |
 | 智能体搭建 | 角色设定、任务逻辑、工具调用、问答机器人、通用 RAG 知识库 | [`agents/`](agents/customer-service-bot/README.md) |
-| 跨境电商 Skills | 网站审计、搜索优化、竞品研究、店铺助手、内容策划、营销与广告 | [`skills/`](skills/) |
+| 跨境电商 Skills | 网站审计、搜索优化、竞品研究、店铺助手、内容策划、营销与广告、合规、GEO、物流、达人、纠纷、B2B、视频、邮件 | [`skills/`](skills/) |
+| 运营自动化与数据工作流 | 结算对账、工单分类、每日简报、价格监控、多平台同步、发票抽取、内容流水线、RAG 评测 | [`workflows/`](workflows/README.md) |
 
 ## 仓库结构
 
@@ -39,7 +40,15 @@
 │   ├── multi-node-pipeline/   # 多节点串联：选品 → 文案 → 质检 → 发布
 │   ├── image-pipeline/        # 图像流：商品图批量处理
 │   ├── api-integration/       # API 对接：分页、限流重试、增量同步
-│   └── plugin-development/    # 插件开发：manifest + handler 规范
+│   ├── plugin-development/    # 插件开发：manifest + handler 规范
+│   ├── rag-evaluation/        # RAG 离线评测：检索指标、转人工策略、阈值扫描
+│   ├── settlement-reconciliation/  # 平台结算对账：差异分类与 Decimal 精确比对
+│   ├── ticket-triage/         # 工单分类：规则分类、优先级、脱敏与回复草稿
+│   ├── daily-ops-brief/       # 每日运营简报：环比、阈值告警、库存覆盖
+│   ├── price-monitor/         # 竞品价格监控：变化检测、退避重试、告警去重
+│   ├── multi-platform-sync/   # 多平台同步：基线冲突检测、dry-run、回归修复
+│   ├── invoice-extraction/    # 发票与合同抽取：字段规则、勾稽校验、人工复核
+│   └── content-pipeline/      # 内容生产流水线：断点续跑、审核闸口、合规阻断
 ├── prompts/                   # Prompt 工程
 │   ├── industry-prompt-templates.md   # 行业提示词模板
 │   └── output-format-spec.md          # 输出格式规范与校验清单
@@ -71,6 +80,14 @@
 | [marketing-analysis](skills/marketing-analysis/SKILL.md) | 营销数据分析：指标拆解、渠道对比、增长诊断 |
 | [ad-campaign-planning](skills/ad-campaign-planning/SKILL.md) | 广告投放方案：盈亏平衡 ROAS、预算分配、测试计划 |
 | [ad-performance-analysis](skills/ad-performance-analysis/SKILL.md) | 广告效果分析：漏斗诊断、扩量/优化/停投决策规则 |
+| [platform-compliance-review](skills/platform-compliance-review/SKILL.md) | 平台合规审核：违禁词、类目资质、知识产权与图片规范 |
+| [geo-optimization](skills/geo-optimization/SKILL.md) | GEO（生成式引擎优化）：AI 搜索可见性、可引用内容与监测 |
+| [logistics-channel-comparison](skills/logistics-channel-comparison/SKILL.md) | 物流渠道比较：有效成本、时效与签收率、分品类推荐 |
+| [influencer-vetting](skills/influencer-vetting/SKILL.md) | 达人合作筛选：受众匹配、真实性检查、报价与合作条款 |
+| [dispute-response](skills/dispute-response/SKILL.md) | 平台纠纷与拒付应对：证据矩阵、时间线与申诉话术 |
+| [b2b-inquiry-reply](skills/b2b-inquiry-reply/SKILL.md) | B2B 询盘回复：询盘评估、阶梯报价、样品政策与跟进 |
+| [short-video-script](skills/short-video-script/SKILL.md) | 短视频脚本：前三秒钩子、分镜表、字幕与合规提示 |
+| [email-lifecycle-marketing](skills/email-lifecycle-marketing/SKILL.md) | 邮件营销生命周期：弃购、复购、新品序列与退订规则 |
 
 ## 技术栈
 
